@@ -1,0 +1,85 @@
+
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+
+}
+.portfolio-title{
+    position: relative;
+}
+.portfolio-title h1{
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+
+}
+.my-work-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+
+}
+.my-work-container img {
+    width: 419px;
+    width: 280px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.my-work-container img:hover{
+    transform: scale(1.50);
+    border: 1px solid blue;
+    border-radius: 10px;
+    transition: 0.3s;
+
+}
+.my-work-showmore{
+    display: flex;
+    gap: 15px;
+    border-radius: 50px;
+    border: 2px solid white;
+    padding: 20px 60px ;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 80px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.my-work-showmore:hover{
+    border-color: #4d33e1;
+    color: #4d33e1;
+    transition: 0.6s;
+
+}
+@media (max-width: 768px ){
+    .portfolio{
+        gap: 50px;
+        margin: 50px 70px;
+        align-items: start;
+    }
+    .portfolio-title h1{
+        padding: 0;
+        font-size: 50px;
+        font-weight: 600;
+
+    }
+    .my-work-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+
+    }
+    .my-work-container img{
+        height: 100%;
+        width: 100%;
+    }
+    .my-work-showmore{
+        padding: 20px 40px ;
+        font-size: 18px;
+        margin: 50px auto;
+    }
+}
